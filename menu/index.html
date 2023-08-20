@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/fonts/icomoon/">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="/css/bootstrap.min.css"> -->
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        input[type='text']::placeholder {
+            padding-left: 35px;
+            font-size: 16px;
+            line-height: 1.5;
+            background-image: url('/magnifying-glass-solid.svg');
+            background-repeat: no-repeat;
+            background-position: left center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="py-2 bg-body-tertiary border-bottom" id="dakdakdak">
+        <div class="container">
+            <ul class="nav me-auto">
+                <img src="/image/logo.png" alt="" width="70px" height="33px" id="dak">
+                <li class="private">l</li>
+                <p id="date"></p>
+
+                <li class="private3">l</li>
+
+                <div class="weather">
+                    <p>Hà Nội</p><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        style="margin: 3px 4px 4px 4px;" viewBox="0 0 20 20">
+                        <path fill="#279"
+                            d="M14.517 10.016a4.481 4.481 0 0 0-8.908-.707c.34-.028.68-.028 1.017-.004a3.483 3.483 0 1 1 6.704 1.84c.39-.056.764-.152 1.105-.27a4.51 4.51 0 0 0 .082-.86Zm-9.44-5.634l-.07-.058a.5.5 0 0 0-.638.765l.858.858l.07.058a.5.5 0 0 0 .638-.765l-.859-.858Zm10.662.637a.5.5 0 0 0-.765-.637l-.859.858l-.058.07a.5.5 0 0 0 .765.637l.859-.858l.058-.07ZM10.52 2.435a.5.5 0 0 0-.992.09v1.213l.008.09a.5.5 0 0 0 .992-.09V2.524l-.008-.09Zm-6.78 9.504c1.056-.576 2.036-.734 2.997-.614c.974.123 1.96.535 3.01 1.148c1.203.701 2.584.829 3.834.656c1.248-.173 2.41-.651 3.21-1.222a.5.5 0 0 0-.582-.814c-.658.47-1.666.893-2.765 1.045c-1.097.152-2.236.03-3.193-.529c-1.108-.646-2.227-1.13-3.39-1.276c-1.175-.147-2.365.054-3.6.728a.5.5 0 0 0 .479.878Zm0 2c1.056-.576 2.036-.734 2.997-.614c.974.123 1.96.535 3.01 1.148c1.203.701 2.584.829 3.834.656c1.248-.173 2.41-.651 3.21-1.222a.5.5 0 0 0-.582-.814c-.658.47-1.666.893-2.765 1.045c-1.097.152-2.236.03-3.193-.529c-1.108-.646-2.227-1.13-3.39-1.276c-1.175-.147-2.365.054-3.6.728a.5.5 0 0 0 .479.878Zm2.997 1.386c-.961-.12-1.941.038-2.997.614a.5.5 0 0 1-.48-.878c1.236-.674 2.426-.875 3.602-.728c1.162.146 2.281.63 3.39 1.276c.956.558 2.095.681 3.192.53c1.098-.153 2.107-.575 2.765-1.046a.5.5 0 0 1 .582.814c-.8.57-1.963 1.049-3.21 1.222c-1.25.173-2.631.045-3.834-.656c-1.05-.613-2.036-1.025-3.01-1.147Z" />
+                    </svg>
+                    <span>
+                        27
+                        <sup>o</sup>
+                    </span>
+                </div>
+
+
+                <li class="navitem"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                        style="margin:-3px 3px auto 130px;" style="font-weight: lighter;" viewBox="0 0 256 256">
+                        <path fill="currentColor"
+                            d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24Zm0 192a88 88 0 1 1 88-88a88.1 88.1 0 0 1-88 88Zm64-88a8 8 0 0 1-8 8h-56a8 8 0 0 1-8-8V72a8 8 0 0 1 16 0v48h48a8 8 0 0 1 8 8Z" />
+                    </svg><a href="#" class="navcss">Mới nhất</a></li>
+                <li class="navitem"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                        style="margin: -4px auto auto auto;" viewBox="0 0 32 32">
+                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2">
+                            <circle cx="16" cy="11" r="4" />
+                            <path d="M24 15c-3 7-8 15-8 15s-5-8-8-15s2-13 8-13s11 6 8 13Z" />
+                        </g>
+                    </svg> <a href="#" class="navcss">Tin theo khu vực</a>
+                </li>
+                <li class="navitem"><img src="/image/logo-200.png" width="30px" height="30px" style="padding:2px;"
+                        alt=""><a href="#" class="navcss">International</a></li>
+            </ul>
+            <ul class="nav">
+                <li class="private2">l</li>
+
+                <li class="navitem">
+                    <svg id="svgElement" class="svg-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                        style="margin-top:-4 ;" viewBox="0 0 24 24">
+                        <g fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="6" r="4" />
+                            <path d="M20 17.5c0 2.485 0 4.5-8 4.5s-8-2.015-8-4.5S7.582 13 12 13s8 2.015 8 4.5Z" />
+                        </g>
+                    </svg>
+                    <div class="board">
+                        <p id="showUser"></p>
+                    </div>
+
+                    <a href="/login1/dak.html" id="logout" class="navcss">Đăng xuất</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" style="margin:-3px auto auto 1px;"
+                        viewBox="0 0 1024 1024">
+                        <path fill="currentColor"
+                            d="M880 112c-3.8 0-7.7.7-11.6 2.3L292 345.9H128c-8.8 0-16 7.4-16 16.6v299c0 9.2 7.2 16.6 16 16.6h101.7c-3.7 11.6-5.7 23.9-5.7 36.4c0 65.9 53.8 119.5 120 119.5c55.4 0 102.1-37.6 115.9-88.4l408.6 164.2c3.9 1.5 7.8 2.3 11.6 2.3c16.9 0 32-14.2 32-33.2V145.2C912 126.2 897 112 880 112zM344 762.3c-26.5 0-48-21.4-48-47.8c0-11.2 3.9-21.9 11-30.4l84.9 34.1c-2 24.6-22.7 44.1-47.9 44.1zm496 58.4L318.8 611.3l-12.9-5.2H184V417.9h121.9l12.9-5.2L840 203.3v617.4z" />
+                    </svg>
+                </li>
+
+
+            </ul>
+        </div>
+    </nav>
+    <header class="py-2 bg-body-tertiary border-bottom" id="header">
+        <div class="mutilit">
+            <div>
+                <a href="/menu/index.html"
+                    class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
+                    <svg id="homeIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M20 19v-8.5a1 1 0 0 0-.4-.8l-7-5.25a1 1 0 0 0-1.2 0l-7 5.25a1 1 0 0 0-.4.8V19a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1z" />
+                    </svg>
+                </a>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Thời sự
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Chính trị</a>
+                                <a class="dropdown-item" href="#">Dân Sinh</a>
+                                <a class="dropdown-item" href="#">Giao thông</a>
+                                <a class="dropdown-item" href="#">Quỹ hy vọng</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Góc nhìn
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Bình luận nhiều</a>
+                                <a class="dropdown-item" href="#">Sức khỏe & Y tế</a>
+                                <a class="dropdown-item" href="#">Môi trường</a>
+                                <a class="dropdown-item" href="#">Covid 19</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Thế giới
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Tư liệu</a>
+                                <a class="dropdown-item" href="#">Phân tích</a>
+                                <a class="dropdown-item" href="#">Quân sự</a>
+                                <a class="dropdown-item" href="#">Cuộc sống đó đây</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Podcast
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Giải mã</a>
+                                <a class="dropdown-item" href="#">Hộp đen</a>
+                                <a class="dropdown-item" href="#">Họ nói gì?</a>
+                                <a class="dropdown-item" href="#">Chuyện đi làm</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Kinh Doanh
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Quốc tế</a>
+                                <a class="dropdown-item" href="#">Doanh Nghiệp</a>
+                                <a class="dropdown-item" href="#">Chứng khoán</a>
+                                <a class="dropdown-item" href="#">Vĩ Mô</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Bất động sản
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Chính sách</a>
+                                <a class="dropdown-item" href="#">Thị trường</a>
+                                <a class="dropdown-item" href="#">Dự án</a>
+                                <a class="dropdown-item" href="#">Không gian sống</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Khoa học
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Tin tức</a>
+                                <a class="dropdown-item" href="#">Phát minh</a>
+                                <a class="dropdown-item" href="#">Ứng dụng</a>
+                                <a class="dropdown-item" href="#">Thường thức</a>
+                            </div>
+                        </li>
+                        <form class="form-inline" id="navsearch">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+            </nav>
+            </ul>
+        </div>
+        </nav>
+        </div>
+    </header>
+    <div class="toppart">
+        <div class="mainart">
+            <img src="/image/s-28860734-jpeg-1683374708-9893-1683374784.jpg" alt="">
+        </div>
+        <div class="leftpart">
+            <div class="daknhabro">
+                <a href="/smaller website/foot.html">Thái Lan hạ Malaysia để bắt kịp Việt Nam </a>
+            </div>
+            <p>
+                CAMPUCHIA -- Thắng Malaysia 2-0 ở lượt ba, Thái Lan có cùng 6 điểm và các chỉ số phụ như Việt Nam ở bảng
+                B bóng
+                đá nam SEA Games 32.
+            </p>
+            <br>
+            <div style="display: flex;">
+                <p>Thể Thao <i id="dakanhen" class="fa-solid fa-message"> </i></p>
+                <p id="cmmak">145</p>
+            </div>
+        </div>
+    </div>
+    <div class="underpart">
+        <div class="same">
+            <h2><i class="fa-solid fa-camera"></i> Những giây phút ấn tượng trong lễ đăng quang của Vua Charles III</h2>
+            <p>Thái tử William thề trung thành với cha, hàng chục nghìn người dân tập trung bất chấp trời mưa là những
+                khoảnh khắc ấn tượng trong ngày đăng quang của Vua Charles III.</p>
+        </div>
+        <div class="same">
+            <h2><i class="fa-solid fa-camera"></i> Chủ tịch nước Võ Văn Thưởng gặp Vua Charles III</h2>
+            <p style="margin-top: 38px;">
+                Chủ tịch nước Võ Văn Thưởng gặp Vua Charles III và Thủ tướng Anh Sunak trong chuyến công tác dự lễ đăng
+                quang của Quốc vương Anh.
+            </p>
+        </div>
+        <hr style="border: none; border-right: 4px solid black; height: 170px; width: 0px;">
+        <div class="same2">
+            <h6>Góc nhìn</h6>
+            <h5>'Trả tiền rồi mà?'</h5>
+            <p style="margin: 3px 10px 5px 10px;font-size: 12    px;">Tôi góp ý khi thấy người bố rửa mông cho đứa con
+                nhỏ trong bồn rửa mặt, anh ta đáp: 'Ơ, trả tiền rồi mà'.</p>
+            <p style="margin: auto 10px 10px 10px;"><var>Hồng Phúc</var></p>
+        </div>
+
+
+
+
+    </div>
+
+    <div class="dak"></div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-white text-muted">
+        <!-- Section: Social media -->
+            <!-- Left -->
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="nguvcl">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3 text-secondary"></i>Mindx Newspaper
+                        </h6>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias id natus eum. Eveniet eligendi nihil atque quaerat enim vero sit tempora? Iure quam earum unde? Esse iure natus earum corrupti.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Products
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Angular</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">React</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Vue</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Laravel</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Pricing</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Settings</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Orders</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Help</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
+                        <p>
+                            <i class="fas fa-envelope me-3 text-secondary"></i>
+                            info@example.com
+                        </p>
+                        <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+                        <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+
+
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+
+
+
+        const dateElement = document.getElementById('date');
+
+        function updateDate() {
+            const options = {
+                weekday: 'long',
+                day: 'numeric',
+                month: 'long',
+                year: 'numeric'
+            };
+
+            const currentDate = new Date().toLocaleDateString('vi-VN', options);
+            dateElement.textContent = currentDate;
+        }
+
+        // Call updateDate function initially
+        updateDate();
+
+        let showUser2 = document.getElementById("showUser")
+        let showUser = localStorage.getItem("Name1");
+        const textnode = document.createTextNode(showUser)
+        showUser2.appendChild(textnode)
+
+
+
+
+
+        const hoverList = document.querySelector('.hover-list');
+        const list = document.querySelector('.list');
+
+        hoverList.addEventListener('mouseover', () => {
+            list.classList.add('show');
+        });
+
+        hoverList.addEventListener('mouseout', () => {
+            list.classList.remove('show');
+        });
+
+
+
+
+    </script>
+</body>
+
+</html>

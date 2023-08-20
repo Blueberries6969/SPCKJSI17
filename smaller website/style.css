@@ -1,0 +1,136 @@
+html {
+    font-family: "Merriweather", serif;
+}
+
+nav {
+    width: 100%;
+    height: 55px;
+    border: solid;
+    margin-bottom: 50px;
+    background-color: #bcdaf1;
+    border-width: 1px;
+    margin-top: 40px;
+}
+.lastthing{
+    margin-left: 80px;    
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.hidden{
+    width: 100%;
+    margin-top: 10px;
+    height: 50px;
+    display: none;
+}
+
+nav ul li a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 30px;
+    color: rgb(42, 42, 116);
+}
+
+.mainbutton {
+    display: flex;
+    margin-top: 10px;
+}
+
+.mainbutton button {
+    width: 40px;
+    height: 40px;
+    border-width: 1px;
+}
+
+.callerba i {
+    width: 15px;
+    height: 15px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+nav li a {
+    margin: 10px 10px;
+}
+
+nav a {
+    display: block;
+    color: #000000;
+    padding: auto 15px 15px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    height: 83%;
+}
+
+nav a:hover {
+    color: #199bd8;
+    text-decoration: none;
+}
+
+.para {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.button {
+    width: 100%;
+    height: 45px;
+    border-radius: 1%;
+    border: 0cap;
+    font-family: "Merriweather", serif;
+    border-width: 1px;
+}
+
+.colba {
+    border: solid;
+    border-width: 1px;
+    width: 90%;
+    margin-left: 10px;
+}
+
+.colba h6 {
+    color: #199bd8;
+}
+
+.colhai {
+    margin: 10px;
+}
+
+.score-board-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.score-board {
+    margin:auto 10px 10px 10px;
+    border: solid;
+    border-width: 1px;
+}
+
+.score-board th,
+.score-board td {
+    padding: 10px;
+    text-align: center;
+}
+
+.score-board th {
+    background-color: #ccc;
+    font-weight: bold;
+    width: 40%;
+}
+.score-board tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.score-board tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.score-board tr:hover {
+    background-color: #ddd;
+}

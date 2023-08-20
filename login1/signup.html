@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SPCK</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="dak.css">
+    <style>
+        html {
+            zoom: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="vh-100 d-flex justify-content-center align-items-center">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <div class="card bg-white" id="bodypage">
+                        <div class="card-body p-5">
+                            <form class="mb-3 mt-md-4">
+                                <h2 class="fw-bold mb-2 text-uppercase ">MindX NewsPaper</h2>
+                                <p class=" mb-5">Vui lòng nhập thông tin đăng kí của bạn!</p>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label ">Địa Chỉ Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Email">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label ">Tên đăng nhập</label>
+                                    <input type="text" class="form-control" id="user" placeholder="Name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="password" class="form-label ">Mật khẩu</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Password">
+                                </div>
+                                <div class="d-grid">
+                                    <button id="btn" type="button" class="btn btn-outline-dark">Đăng kí</button>
+                                </div>
+                            </form>
+                            <div>
+                                <p class="mb-0  text-center">Bạn đã có tài khoản? <a href="dak.html"
+                                        class="text-primary fw-bold">Đăng nhập</a></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+    integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
+    import { getDatabase, ref, set, child, get } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-database.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyBsOD65PNo9WrifeP68lsIGU8drIr0mc_I",
+        authDomain: "tranglogin.firebaseapp.com",
+        projectId: "tranglogin",
+        storageBucket: "tranglogin.appspot.com",
+        messagingSenderId: "521058170035",
+        appId: "1:521058170035:web:80ce1bf7a8c81eb6ff2cc6",
+        measurementId: "G-RFLYH4Y1Q7"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase();
+
+    const email = document.getElementById('email');
+    const username = document.getElementById('user')
+    const pass = document.getElementById('password');
+    const submit = document.getElementById('btn')
+
+    function validationForm() {
+        let emailRegex = /^[a-zA-Z0-9]+@(gmail|yahoo|outlook)\.com$/;
+        let userRegex = /^[a-zA-Z0-9]{6,}$/;
+
+
+        // if (!emailRegex.test(email.value)){
+        //     alert('Invalid email')
+        //     return false
+        // }
+
+        if (!userRegex.test(username.value)) {
+            alert('Invalid email')
+            return false
+        }
+
+
+
+
+        return true
+
+    }
+    function registerForm() {
+        if (!validationForm()) {
+            return;
+        }
+
+        const dbRef = ref(db);
+        // console.log(email.value);
+        get(child(dbRef, "User/" + username.value))
+            .then((result) => {
+                if (result.exists()) {
+                    alert("Exist")
+
+                } else {
+                    set(ref(db, "User/" + username.value), {
+                        usernameDB: username.value,
+                        passDB: encPass()
+
+
+                    }).then(() => {
+                        alert('Success');
+                        window.location = "dak.html"
+                    }).catch((error) => {
+                        alert('error' + error);
+                    })
+                }
+            })
+
+
+    }
+
+    function encPass() {
+        var encryptionPass = CryptoJS.AES.encrypt(pass.value, pass.value)
+        return encryptionPass.toString();
+    }
+
+    submit.addEventListener('click', registerForm);
+</script>
+
+</html>
